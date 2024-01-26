@@ -6,14 +6,59 @@ body {
 
 ul {
     list-style-type: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
 }
 
 a {
     text-decoration: none;
 }
 
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
 
 /* =====HEADER======= */
+.container {
+    max-width: 1158px;
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+}
+
+.header {
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
 
 .header-logo {
     color: var(--IRIS, #4D5AE5);
@@ -23,6 +68,22 @@ a {
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    display: flex;
+    align-items: center;
+}
+
+.header-navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.header-menu-list {
+    display: flex;
+    margin-left: 76px;
+    gap: 40px;
+    align-items: center;
 }
 
 .header-logo-web {
@@ -30,7 +91,15 @@ a {
 }
 
 .header-address {
-    font-style: normal
+    font-style: normal;
+    display: flex;
+    margin-left: 332px;
+
+}
+
+.header-address-list {
+    display: flex;
+    gap: 40px;
 }
 
 .header-address-link {
@@ -40,6 +109,8 @@ a {
     line-height: 1.5;
     letter-spacing: 0.02em;
 }
+
+.header-address-list {}
 
 .header-address-link:hover,
 .header-address-link:focus {
@@ -67,13 +138,18 @@ a {
     background: var(--NAVY-BLUE, #2E2F42);
 }
 
+.hero-container {
+    padding: 188px 472px 292px 472px;
+}
+
 .hero-title {
     color: var(--WHITE, #FFF);
-    text-align: center;
     font-size: 56px;
     font-weight: 700;
     line-height: 1.07;
     letter-spacing: 0.02em;
+    width: 496px;
+    margin-bottom: 48px;
 }
 
 .hero-btn {
@@ -84,7 +160,9 @@ a {
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.04em;
-    cursor: pointer
+    cursor: pointer;
+    border: none;
+    padding: 16px 32px;
 }
 
 .hero-btn:hover,
@@ -96,6 +174,14 @@ a {
 
 .advantages {
     background: #FFF;
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.advantages-list {
+    display: flex;
+    gap: 24px;
+
 }
 
 .advantages-subtitle {
@@ -104,6 +190,11 @@ a {
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.02em;
+    margin-bottom: 8px;
+}
+
+.advantages-item {
+    width: calc((100% - 72px) / 4);
 }
 
 .advantages-item-text {
@@ -118,12 +209,20 @@ a {
 
 .workers {
     background: var(--CLOUD, #F4F4FD);
+    padding-bottom: 120px;
+    padding-top: 120px;
+
 }
 
-.workers-list {}
+.workers-list {
+    display: flex;
+    gap: 24px;
+}
 
 .workers-itom {
     background-color: #FFFFFF;
+    padding-bottom: 32px;
+
 }
 
 .workers-hidden {
@@ -134,6 +233,8 @@ a {
     line-height: 1.11;
     letter-spacing: 0.02em;
     text-transform: capitalize;
+
+    padding-bottom: 72px;
 }
 
 .workers-subtitle {
@@ -143,6 +244,9 @@ a {
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.02em;
+    margin-top: 32px;
+    margin-bottom: 8px;
+
 }
 
 .workers-text {
@@ -152,9 +256,16 @@ a {
     font-weight: 400;
     line-height: 1.5;
     letter-spacing: 0.02em;
+
+
 }
 
 /* ======portfolio======== */
+
+.portfolio {
+    padding-bottom: 120px;
+    padding-top: 120px;
+}
 
 .portfolio-hidden {
     color: var(--NAVY-BLUE, #2E2F42);
@@ -164,6 +275,20 @@ a {
     line-height: 1.11;
     letter-spacing: 0.02em;
     text-transform: capitalize;
+    margin-bottom: 72px;
+}
+
+.portfolio-list {
+    display: flex;
+    column-gap: 24px;
+    flex-wrap: wrap;
+    row-gap: 48px;
+
+}
+
+.portfolio-itom {
+    background: var(--WHITE, #FFF);
+
 }
 
 .portfolio-subtitle {
@@ -172,6 +297,10 @@ a {
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.02em;
+    margin-bottom: 8px;
+    padding-left: 16px;
+    padding-top: 16px;
+    margin: 0 auto;
 }
 
 .portfolio-text {
@@ -180,10 +309,14 @@ a {
     font-weight: 400;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    padding-left: 16px;
+    padding-top: 16px;
+    margin: 0 auto;
 }
 
 .footer {
     background: var(--NAVY-BLUE, #2E2F42);
+    padding-top: 102px;
 }
 
 .footer-logo {
@@ -195,6 +328,8 @@ a {
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+
+
 }
 
 .footer-logo-web {
@@ -207,4 +342,7 @@ a {
     font-weight: 400;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    margin-top: 18px;
+    padding-bottom: 100px;
+    max-width: 264px;
 }
