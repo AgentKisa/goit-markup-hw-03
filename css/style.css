@@ -46,18 +46,20 @@ h6 {
     max-width: 1158px;
     width: 100%;
     margin: 0 auto;
-    padding: 0 15px;
+    padding-left: 15px;
+    padding-right: 15px;
 
 }
 
 .header-container {
     display: flex;
     align-items: center;
-    padding: 24px 0;
 }
 
 .header {
     border-bottom: 1px solid #e7e9fc;
+    padding-top: 24px;
+    padding-bottom: 24px;
 
 }
 
@@ -100,11 +102,12 @@ h6 {
 
 }
 
-.header-menu-item {
-    padding: 24px 0;
-}
+.header-menu-item {}
 
-.header-menu-link {}
+.header-menu-link {
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
 
 .header-address-list {
     display: flex;
@@ -118,6 +121,8 @@ h6 {
     font-weight: 400;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 
 .header-address-list {}
