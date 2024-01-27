@@ -98,9 +98,14 @@ h6 {
 
 }
 
+.header-menu-item {}
+
+.header-menu-link {}
+
 .header-address-list {
     display: flex;
     gap: 40px;
+    padding: 24px 0;
 }
 
 .header-address-link {
