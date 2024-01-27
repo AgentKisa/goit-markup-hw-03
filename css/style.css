@@ -53,11 +53,12 @@ h6 {
 .header-container {
     display: flex;
     align-items: center;
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 
 .header {
-    padding-top: 24px;
-    padding-bottom: 24px;
+    border-bottom: 1px solid #e7e9fc
 }
 
 .header-logo {
@@ -70,6 +71,7 @@ h6 {
     text-transform: uppercase;
     display: flex;
     align-items: center;
+    margin-right: 76px
 }
 
 .header-navigation {
@@ -81,7 +83,7 @@ h6 {
 
 .header-menu-list {
     display: flex;
-    margin-left: 76px;
+
     gap: 40px;
     align-items: center;
 }
@@ -136,11 +138,11 @@ h6 {
 
 .hero {
     background: var(--NAVY-BLUE, #2E2F42);
+    padding-top: 188px;
+    padding-bottom: 188px;
 }
 
-.hero-container {
-    padding: 188px 472px 292px 472px;
-}
+.hero-container {}
 
 .hero-title {
     color: var(--WHITE, #FFF);
@@ -148,8 +150,10 @@ h6 {
     font-weight: 700;
     line-height: 1.07;
     letter-spacing: 0.02em;
-    width: 496px;
+    max-width: 496px;
     margin-bottom: 48px;
+    text-align: center;
+
 }
 
 .hero-btn {
@@ -163,6 +167,9 @@ h6 {
     cursor: pointer;
     border: none;
     padding: 16px 32px;
+    display: block;
+    min-width: 169px;
+    border-radius: 4px;
 }
 
 .hero-btn:hover,
@@ -217,11 +224,15 @@ h6 {
 .workers-list {
     display: flex;
     gap: 24px;
+
 }
 
 .workers-itom {
     background-color: #FFFFFF;
     padding-bottom: 32px;
+    width: calc((100% - 72px) / 4);
+    border-radius: 0px 0px 4px 4px;
+
 
 }
 
@@ -233,8 +244,7 @@ h6 {
     line-height: 1.11;
     letter-spacing: 0.02em;
     text-transform: capitalize;
-
-    padding-bottom: 72px;
+    margin-bottom: 72px;
 }
 
 .workers-subtitle {
@@ -244,8 +254,6 @@ h6 {
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    margin-top: 32px;
-    margin-bottom: 8px;
 
 }
 
@@ -258,6 +266,21 @@ h6 {
     letter-spacing: 0.02em;
 
 
+}
+
+.workers-picture {
+    display: block;
+}
+
+.workers-subtitle-name {
+    text-align: center;
+    margin-bottom: 8px;
+    padding-top: 32px;
+}
+
+.workers-text-job {
+    text-align: center;
+    padding-bottom: 32px;
 }
 
 /* ======portfolio======== */
@@ -297,10 +320,8 @@ h6 {
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    margin-bottom: 8px;
-    padding-left: 16px;
-    padding-top: 16px;
     margin: 0 auto;
+    margin-bottom: 8px
 }
 
 .portfolio-text {
@@ -309,14 +330,28 @@ h6 {
     font-weight: 400;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    padding-left: 16px;
-    padding-top: 16px;
     margin: 0 auto;
+    text-align: left;
 }
+
+.portofolio-subtitle-rank {
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none;
+    text-align: left;
+
+}
+
+.portfolio-picture {
+    display: block;
+}
+
+/* ======footer======== */
 
 .footer {
     background: var(--NAVY-BLUE, #2E2F42);
-    padding-top: 102px;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 .footer-logo {
@@ -328,6 +363,8 @@ h6 {
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    margin-bottom: 16px;
+    display: inline-block;
 
 
 }
@@ -342,7 +379,5 @@ h6 {
     font-weight: 400;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    margin-top: 18px;
-    padding-bottom: 100px;
     max-width: 264px;
 }
