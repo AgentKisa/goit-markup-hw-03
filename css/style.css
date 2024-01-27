@@ -46,24 +46,16 @@ h6 {
     max-width: 1158px;
     width: 100%;
     margin: 0 auto;
-    padding-left: 15px;
-    padding-right: 15px;
 
 }
 
 .header-container {
     display: flex;
     align-items: center;
-    padding-top: 24px;
-    padding-bottom: 24px;
 }
 
 .header {
     border-bottom: 1px solid #e7e9fc;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-top: 24px;
-    padding-bottom: 24px;
 }
 
 .header-logo {
@@ -90,6 +82,10 @@ h6 {
     display: flex;
     gap: 40px;
     align-items: center;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .header-logo-web {
@@ -146,7 +142,6 @@ h6 {
     padding-bottom: 188px;
 }
 
-.hero-container {}
 
 .hero-title {
     color: var(--WHITE, #FFF);
@@ -155,9 +150,8 @@ h6 {
     line-height: 1.07;
     letter-spacing: 0.02em;
     max-width: 496px;
-    margin-bottom: 48px;
-    text-align: center;
-
+    margin: 0 auto;
+    margin-bottom: 48px
 }
 
 .hero-btn {
@@ -174,6 +168,7 @@ h6 {
     display: block;
     min-width: 169px;
     border-radius: 4px;
+    margin: 0 auto;
 }
 
 .hero-btn:hover,
